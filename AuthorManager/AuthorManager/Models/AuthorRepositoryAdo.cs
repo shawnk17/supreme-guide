@@ -15,7 +15,7 @@ namespace AuthorManager.Models
 
         private string selectByIdClause = "WHERE Id = @id\n";
 
-        private string orderByName = "ORDER BY LName desc, FName\n";
+        private string orderByName = "ORDER BY FName asc, LName\n";
 
         private string insertAuthorQuery = "INSERT INTO Authors\n" +
             "(FName,LName,Email)\n" +
